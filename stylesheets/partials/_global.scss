@@ -1,0 +1,11 @@
+* { box-sizing: order-box }
+
+//////// CLEARFIX SHIT /////////
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}

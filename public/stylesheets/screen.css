@@ -53,5 +53,31 @@ table {
 }
 
 body > header {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  height: 44px;
+  padding: 10px;
+}
+body > header > nav {
+  position: absolute;
+  right: 10px;
+  top: 22px;
+}
+body > header > nav > ul li {
+  float: left;
+  padding: 4px 10px;
+}
+
+* {
+  box-sizing: order-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
 }
