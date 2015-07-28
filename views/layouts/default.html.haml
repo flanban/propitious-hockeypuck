@@ -1,0 +1,16 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %title= @title
+    %link{:href => "/stylesheets/screen.css", :rel => "stylesheet"}/
+    /[if IE]
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  %body
+    =render 'shared/header'
+
+    = yield
+
+    %footer
+      %p footer
