@@ -1,4 +1,7 @@
-@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,12 +18,18 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 
-html {
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
   line-height: 1;
 }
 
@@ -28,239 +37,51 @@ ol, ul {
   list-style: none;
 }
 
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
+body > header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
 }
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-html, body {
-  background: white;
-}
-
-body {
-  color: #333333;
-  font-family: "Helvetica Neue", Hevetica, Arial, sans-serif;
-  font-size: 110%;
-  line-height: 1.4;
-}
-
-.links a:link, .content a:link, section[role=main] > article a:link {
-  color: #bb3a08;
-  text-decoration: underline;
-}
-.links a:visited, .content a:visited, section[role=main] > article a:visited {
-  color: #a72;
-}
-.links a:hover, .content a:hover, section[role=main] > article a:hover {
-  color: #f66933;
-  text-decoration: none;
-}
-.links a.more, .content a.more, section[role=main] > article a.more {
-  white-space: nowrap;
-}
-.links a.more:after, .content a.more:after, section[role=main] > article a.more:after {
-  content: " »";
-}
-
-.typography strong, .content strong, section[role=main] > article strong, .typography b, .content b, section[role=main] > article b {
-  color: black;
-  font-weight: bold;
-}
-.typography em, .content em, section[role=main] > article em, .typography i, .content i, section[role=main] > article i {
-  font-style: italic;
-}
-.typography abbr, .content abbr, section[role=main] > article abbr, .typography acronym, .content acronym, section[role=main] > article acronym {
-  border-bottom: 1px dotted #999999;
-}
-.typography sub, .content sub, section[role=main] > article sub, .typography sup, .content sup, section[role=main] > article sup {
-  font-size: 85%;
-}
-.typography sub, .content sub, section[role=main] > article sub {
-  vertical-align: sub;
-}
-.typography sup, .content sup, section[role=main] > article sup {
-  vertical-align: super;
-}
-.typography span.caps, .content span.caps, section[role=main] > article span.caps {
-  font-size: 95%;
-}
-.typography h1, .content h1, section[role=main] > article h1, .typography h2, .content h2, section[role=main] > article h2, .typography h3, .content h3, section[role=main] > article h3, .typography h4, .content h4, section[role=main] > article h4, .typography h5, .content h5, section[role=main] > article h5, .typography h6, .content h6, section[role=main] > article h6 {
-  color: #111111;
-  margin: 1em 0;
-}
-.typography h1, .content h1, section[role=main] > article h1 {
-  font-weight: bold;
-  font-size: 200%;
-  line-height: 1.099;
-  margin: 0.75em 0;
-}
-.typography h2, .content h2, section[role=main] > article h2 {
-  font-weight: bold;
-  font-size: 170%;
-  line-height: 1.099;
-}
-.typography h3, .content h3, section[role=main] > article h3 {
-  font-weight: bold;
-  font-size: 140%;
-  line-height: 1.169;
-  margin: 1.25em 0 0.5em;
-}
-.typography h4, .content h4, section[role=main] > article h4 {
-  font-weight: bold;
-  font-size: 110%;
-  line-height: 1.26;
-  margin: 0.5em 0 0.5em;
-}
-.typography h5, .content h5, section[role=main] > article h5 {
-  font-style: italic;
-  font-size: 110%;
-  line-height: 1.4;
-  margin: 0.65em 0;
-}
-.typography h6, .content h6, section[role=main] > article h6 {
-  font-weight: bold;
-  margin-bottom: -0.75em;
-}
-.typography p, .content p, section[role=main] > article p {
-  margin: 1em 0;
-}
-.typography ul, .content ul, section[role=main] > article ul, .typography ol, .content ol, section[role=main] > article ol, .typography dl, .content dl, section[role=main] > article dl {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.typography ul, .content ul, section[role=main] > article ul, .typography ol, .content ol, section[role=main] > article ol, .typography dd, .content dd, section[role=main] > article dd {
-  padding-left: 2.25em;
-}
-.typography ul, .content ul, section[role=main] > article ul {
-  list-style: disc;
-}
-.typography ol, .content ol, section[role=main] > article ol {
-  list-style: decimal;
-}
-.typography li, .content li, section[role=main] > article li {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-.typography dt, .content dt, section[role=main] > article dt {
-  margin-top: 1em;
-}
-.typography dd, .content dd, section[role=main] > article dd {
-  margin-bottom: 1em;
-}
-.typography code, .content code, section[role=main] > article code, .typography dfn, .content dfn, section[role=main] > article dfn, .typography kbd, .content kbd, section[role=main] > article kbd, .typography samp, .content samp, section[role=main] > article samp, .typography tt, .content tt, section[role=main] > article tt {
-  font-family: Monaco, "Andale Mono", "Lucida Console", monospace;
-  font-size: 95%;
-  color: #666666;
-}
-.typography pre, .content pre, section[role=main] > article pre {
-  background: #666666;
-  color: #cccccc;
-  font-family: Monaco, "Andale Mono", "Lucida Console", monospace;
-  font-size: 95%;
-  line-height: 1.4;
-  margin: 1.5em 0;
-  padding: 1em;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-}
-
-.content .box, section[role=main] > article .box {
-  background: #efeacf;
-  border: 1px solid #e2d9a9;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  margin: 1.5em -1em;
-  padding: 1px 1em;
-}
-
-header[role=banner] {
-  background: #973b12;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4xNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjMwJSIgY3k9IjUwcHgiIHI9IjQwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM5NzNiMTIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2NTI3MGMiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.15))), radial-gradient(30% 50px, #973b12, #65270c 400px);
-  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), -moz-radial-gradient(30% 50px, #973b12, #65270c 400px);
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), -webkit-radial-gradient(30% 50px, #973b12, #65270c 400px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(30% 50px, #973b12, #65270c 400px);
-  padding: 20px 15%;
-  position: relative;
-}
-header[role=banner] a:link {
-  color: #ead8d0;
-  text-decoration: none;
-}
-header[role=banner] a:visited {
-  color: #ead8d0;
-}
-header[role=banner] a:hover {
-  color: white;
-  text-decoration: underline;
-}
-header[role=banner] .action-link {
+body > header > nav {
   position: absolute;
-  right: 15%;
-  top: 55px;
+  right: 10px;
+  top: 22px;
 }
-header[role=banner] .action-link a {
-  background: rgba(255, 255, 255, 0.1);
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  display: block;
-  padding: 0.5em 1em;
-  text-shadow: #4c1e09 0 1px 0;
-}
-header[role=banner] .action-link a:after {
-  content: " ⇢";
+body > header > nav > ul li {
+  float: left;
+  padding: 4px 10px;
 }
 
-section[role=main] {
-  padding: 1px 15%;
+* {
+  box-sizing: border-box;
 }
 
-body > footer {
-  padding: 0 15% 20px;
-  font-size: 90%;
-  color: gray;
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
 }
-body > footer a:link {
-  color: #333333;
-  text-decoration: underline;
-}
-body > footer a:visited {
-  color: #333333;
-}
-body > footer a:hover {
-  color: #333333;
-  text-decoration: none;
-}
-body > footer p {
-  margin: 1em 0;
+
+.clearfix:after {
+  clear: both;
 }
