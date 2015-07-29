@@ -1,4 +1,7 @@
+//////// Global SHIT /////////
 * { box-sizing: border-box }
+html { height: 100; }
+body { min-height: 100%; }
 
 //////// CLEARFIX SHIT /////////
 .clearfix:before,
@@ -17,4 +20,38 @@
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   transition: all 500ms;
+}
+
+//////// Colors SHIT /////////
+.bg-white-95 { // 95% white
+  background-color:#eeeeee;
+}
+.bg-white-85 { // 85% white
+  background-color:#d9d9d9;
+}
+//////// Layout SHIT /////////
+body > section { 
+  overflow:hidden;
+  position:relative;
+}
+.layout-fp { height:100vh; width:100%; }
+.two-files {
+  .a-file, .b-file {
+    position:absolute;
+    height:100%;
+  }
+  .a-file {
+    width:45%;
+    left:0;
+    .row-1 {
+      height:50%;
+    }
+    .row-2 {
+      height:50%;
+    }
+  }
+  .b-file {
+    width:55%;
+    left:45%;
+  }
 }

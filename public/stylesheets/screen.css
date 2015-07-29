@@ -61,6 +61,7 @@ body > header {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   padding: 10px;
+  z-index: 100;
 }
 body > header > nav {
   position: absolute;
@@ -74,6 +75,14 @@ body > header > nav > ul li {
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  height: 100;
+}
+
+body {
+  min-height: 100%;
 }
 
 .clearfix:before,
@@ -92,4 +101,41 @@ body > header > nav > ul li {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   transition: all 500ms;
+}
+
+.bg-white-95 {
+  background-color: #eeeeee;
+}
+
+.bg-white-85 {
+  background-color: #d9d9d9;
+}
+
+body > section {
+  overflow: hidden;
+  position: relative;
+}
+
+.layout-fp {
+  height: 100vh;
+  width: 100%;
+}
+
+.two-files .a-file, .two-files .b-file {
+  position: absolute;
+  height: 100%;
+}
+.two-files .a-file {
+  width: 45%;
+  left: 0;
+}
+.two-files .a-file .row-1 {
+  height: 50%;
+}
+.two-files .a-file .row-2 {
+  height: 50%;
+}
+.two-files .b-file {
+  width: 55%;
+  left: 45%;
 }
