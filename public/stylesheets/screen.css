@@ -214,6 +214,10 @@ body > footer p {
   top: 50%;
 }
 
+body p {
+  position: relative;
+}
+
 .home-1 {
   background-image: url("/images/home-1.png");
   background-size: cover;
