@@ -4,9 +4,17 @@ body p {
   position:relative;
 } 
 
+.step-header {
+  position: absolute;
+  text-align: center;
+  top:30%;
+}
+
 ///// needs abstraction end //////
 
-
+.row-1, .row-2 {
+  position:relative;
+}
 
 .home-1 {
   background-image:url('/images/home-1.png');
@@ -26,11 +34,19 @@ body p {
 }
 .home-3 {
   .a-file {
+    .row-1 {
+      .step-header {
+        width: 200px;
+        left: 50%;
+        margin-left: -100px;
+      }
+    }
     .row-2 {
       p {
-        width:365px;
-        margin:auto;
-        top:30%;        
+        max-width:365px;
+        position: absolute;
+        right: 140px;
+        top: 30%;    
       }
     }
   }
@@ -45,6 +61,7 @@ body p {
   width:100%;
   height:225px;
   background-color:#0497e7;
+  padding: 5% 16%;
 }
 .home-4 {
   .a-file {

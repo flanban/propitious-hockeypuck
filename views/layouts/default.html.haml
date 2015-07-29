@@ -9,10 +9,12 @@
     %script{:src => "/javascripts/jquery.inview.js"}
     %script{:src => "/javascripts/loading-images.js"}
     %script{:src => "/javascripts/nav.js"}
+    %script{:src => "/javascripts/main.js"}
 
     /[if IE]
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   %body
+    =render 'shared/load-page'
     =render 'shared/header'
 
     = yield

@@ -1,0 +1,19 @@
+#page-loading {
+  min-height:100vh;
+  width:100%;
+  top:0;
+  left:0;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  position:relative;
+  img {
+    top:50%;
+    margin-top:-110px;
+    width:334px;
+    margin-left:-167px;
+    height:219px;
+    position:absolute;
+    left:50%;
+  }
+}
