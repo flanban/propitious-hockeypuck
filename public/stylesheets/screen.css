@@ -85,3 +85,11 @@ body > header > nav > ul li {
 .clearfix:after {
   clear: both;
 }
+
+.animated-image {
+  margin-top: 50px;
+  opacity: 0;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+}
