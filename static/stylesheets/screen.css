@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body > header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  z-index: 100;
+}
+body > header > nav {
+  position: absolute;
+  right: 10px;
+  top: 22px;
+}
+body > header > nav > ul li {
+  float: left;
+  padding: 4px 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100;
+}
+
+body {
+  min-height: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.animated-image {
+  margin-top: 50px;
+  opacity: 0;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.bg-white-95 {
+  background-color: #eeeeee;
+}
+
+.bg-white-85 {
+  background-color: #d9d9d9;
+}
+
+.bg-white-50 {
+  background-color: #808080;
+}
+
+.bg-white-10 {
+  background-color: #1a1a1a;
+}
+
+.bg-white-5 {
+  background-color: #0d0d0d;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+body > section {
+  overflow: hidden;
+  position: relative;
+}
+
+.layout-fp {
+  height: 96vh;
+  width: 100%;
+}
+.layout-fp p {
+  position: relative;
+}
+
+.layout-fp-70 {
+  height: 70vh;
+  width: 100%;
+}
+
+.two-files-55-45 .a-file, .two-files-55-45 .b-file {
+  position: absolute;
+  height: 100%;
+}
+.two-files-55-45 .a-file {
+  width: 55%;
+  left: 0;
+}
+.two-files-55-45 .a-file .row-1 {
+  height: 50%;
+}
+.two-files-55-45 .a-file .row-2 {
+  height: 50%;
+}
+.two-files-55-45 .b-file {
+  width: 45%;
+  left: 55%;
+}
+
+.two-files-50-50 .a-file, .two-files-50-50 .b-file {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+.two-files-50-50 .a-file {
+  left: 0;
+}
+.two-files-50-50 .a-file .row-1 {
+  height: 55%;
+}
+.two-files-50-50 .a-file .row-2 {
+  height: 45%;
+}
+.two-files-50-50 .b-file {
+  left: 50%;
+}
+.two-files-50-50 .b-file .row-1 {
+  height: 45%;
+}
+.two-files-50-50 .b-file .row-2 {
+  height: 55%;
+}
+
+.two-files-33-66 .a-file, .two-files-33-66 .b-file {
+  position: absolute;
+  height: 100%;
+}
+.two-files-33-66 .a-file {
+  left: 0;
+  width: 33%;
+}
+.two-files-33-66 .b-file {
+  width: 67%;
+  left: 33%;
+}
+
+body > footer {
+  height: 100vh;
+  text-align: center;
+}
+body > footer p {
+  position: relative;
+  top: 50%;
+}
+
+.home-1 {
+  background-image: url("/images/home-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-2 p:first-child {
+  width: 890px;
+  margin: auto;
+  top: 30%;
+}
+.home-2 p:nth-of-type(2) {
+  top: 50%;
+}
+
+.home-3 .a-file .row-2 p {
+  width: 365px;
+  margin: auto;
+  top: 30%;
+}
+.home-3 .b-file {
+  background-image: url("/images/skateboard-keyboard.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blue-banner {
+  width: 100%;
+  height: 225px;
+  background-color: #0497e7;
+}
+
+.home-4 .a-file .row-1 {
+  background-image: url("/images/quick-consult.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home-4 .b-file .row-2 {
+  background-image: url("/images/on-a-chair.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-6 {
+  background-image: url("/images/beard-book.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
