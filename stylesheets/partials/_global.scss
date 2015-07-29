@@ -1,4 +1,4 @@
-//////// Global SHIT /////////
+//////// General SHIT /////////
 * { box-sizing: border-box }
 html { height: 100; }
 body { min-height: 100%; }
@@ -38,13 +38,32 @@ body { min-height: 100%; }
 .bg-white-5 {
   background-color:#0d0d0d;    
 }
+
+//////// Type SHIT /////////
+.text-center {
+  text-align:center;
+}
+.bold {
+  font-weight:bold;
+}
+
 //////// Layout SHIT /////////
 body > section { 
   overflow:hidden;
   position:relative;
 }
 
-.layout-fp { height:96vh; width:100%; }// is a bit less than 100% on purpose
+
+.layout-fp { 
+  height:96vh; width:100%;
+    p {
+      position:relative; 
+    }
+  }// is a bit less than 100% on purpose
+.layout-fp-70   { 
+  height:70vh; 
+  width:100%;
+}
 
 .two-files-55-45 {
   .a-file, .b-file {

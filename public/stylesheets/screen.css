@@ -123,6 +123,14 @@ body {
   background-color: #0d0d0d;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 body > section {
   overflow: hidden;
   position: relative;
@@ -130,6 +138,14 @@ body > section {
 
 .layout-fp {
   height: 96vh;
+  width: 100%;
+}
+.layout-fp p {
+  position: relative;
+}
+
+.layout-fp-70 {
+  height: 70vh;
   width: 100%;
 }
 
@@ -196,4 +212,58 @@ body > footer {
 body > footer p {
   position: relative;
   top: 50%;
+}
+
+.home-1 {
+  background-image: url("/images/home-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-2 p:first-child {
+  width: 890px;
+  margin: auto;
+  top: 30%;
+}
+.home-2 p:nth-of-type(2) {
+  top: 50%;
+}
+
+.home-3 .a-file .row-2 p {
+  width: 365px;
+  margin: auto;
+  top: 30%;
+}
+.home-3 .b-file {
+  background-image: url("/images/skateboard-keyboard.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blue-banner {
+  width: 100%;
+  height: 225px;
+  background-color: #0497e7;
+}
+
+.home-4 .a-file .row-1 {
+  background-image: url("/images/quick-consult.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home-4 .b-file .row-2 {
+  background-image: url("/images/on-a-chair.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-6 {
+  background-image: url("/images/beard-book.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
