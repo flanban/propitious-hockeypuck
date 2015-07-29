@@ -111,31 +111,89 @@ body {
   background-color: #d9d9d9;
 }
 
+.bg-white-50 {
+  background-color: #808080;
+}
+
+.bg-white-10 {
+  background-color: #1a1a1a;
+}
+
+.bg-white-5 {
+  background-color: #0d0d0d;
+}
+
 body > section {
   overflow: hidden;
   position: relative;
 }
 
 .layout-fp {
-  height: 100vh;
+  height: 96vh;
   width: 100%;
 }
 
-.two-files .a-file, .two-files .b-file {
+.two-files-55-45 .a-file, .two-files-55-45 .b-file {
   position: absolute;
   height: 100%;
 }
-.two-files .a-file {
-  width: 45%;
+.two-files-55-45 .a-file {
+  width: 55%;
   left: 0;
 }
-.two-files .a-file .row-1 {
+.two-files-55-45 .a-file .row-1 {
   height: 50%;
 }
-.two-files .a-file .row-2 {
+.two-files-55-45 .a-file .row-2 {
   height: 50%;
 }
-.two-files .b-file {
-  width: 55%;
-  left: 45%;
+.two-files-55-45 .b-file {
+  width: 45%;
+  left: 55%;
+}
+
+.two-files-50-50 .a-file, .two-files-50-50 .b-file {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+.two-files-50-50 .a-file {
+  left: 0;
+}
+.two-files-50-50 .a-file .row-1 {
+  height: 55%;
+}
+.two-files-50-50 .a-file .row-2 {
+  height: 45%;
+}
+.two-files-50-50 .b-file {
+  left: 50%;
+}
+.two-files-50-50 .b-file .row-1 {
+  height: 45%;
+}
+.two-files-50-50 .b-file .row-2 {
+  height: 55%;
+}
+
+.two-files-33-66 .a-file, .two-files-33-66 .b-file {
+  position: absolute;
+  height: 100%;
+}
+.two-files-33-66 .a-file {
+  left: 0;
+  width: 33%;
+}
+.two-files-33-66 .b-file {
+  width: 67%;
+  left: 33%;
+}
+
+body > footer {
+  height: 100vh;
+  text-align: center;
+}
+body > footer p {
+  position: relative;
+  top: 50%;
 }
