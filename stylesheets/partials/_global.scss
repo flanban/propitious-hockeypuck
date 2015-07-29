@@ -32,6 +32,9 @@ body {  height:100;min-height: 100%; }
 .bg-white-50 {
   background-color:#808080;  
 }
+.bg-white-35 {
+  background-color:#595959;
+}
 .bg-white-10 {
   background-color:#1a1a1a;  
 }
@@ -127,6 +130,7 @@ body > section {
   .a-file {
     left:0;
     width:33%;
+    padding: 100px 0 0 44px;
   }
   .b-file {
     width:67%;

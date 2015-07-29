@@ -6,13 +6,15 @@
   position: fixed;
   z-index: 100;
   background-color: white;
-  position:relative;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
   img {
     top:50%;
-    margin-top:-110px;
-    width:334px;
-    margin-left:-167px;
-    height:219px;
+    margin-top:-72px;
+    width:500px;
+    margin-left:-250px;
+    height:145px;
     position:absolute;
     left:50%;
   }

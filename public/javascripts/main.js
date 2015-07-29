@@ -1,5 +1,5 @@
 $( window ).load(function() {
   setTimeout( function() {
-    $('#page-loading').fadeOut('slow')
+    //$('#page-loading').css('opacity','0')
   }, 500);
 });

@@ -120,6 +120,10 @@ body {
   background-color: #808080;
 }
 
+.bg-white-35 {
+  background-color: #595959;
+}
+
 .bg-white-10 {
   background-color: #1a1a1a;
 }
@@ -216,6 +220,7 @@ body > section {
 .two-files-33-66 .a-file {
   left: 0;
   width: 33%;
+  padding: 100px 0 0 44px;
 }
 .two-files-33-66 .b-file {
   width: 67%;
@@ -239,14 +244,16 @@ body > footer p {
   position: fixed;
   z-index: 100;
   background-color: white;
-  position: relative;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
 }
 #page-loading img {
   top: 50%;
-  margin-top: -110px;
-  width: 334px;
-  margin-left: -167px;
-  height: 219px;
+  margin-top: -72px;
+  width: 500px;
+  margin-left: -250px;
+  height: 145px;
   position: absolute;
   left: 50%;
 }
@@ -319,9 +326,28 @@ body p {
   background-repeat: no-repeat;
 }
 
+.home-5 .text-holder {
+  width: 700px;
+  margin: auto;
+  padding: 48px 0 0 0;
+}
+.home-5 .text-holder ul {
+  width: 100%;
+}
+.home-5 .text-holder ul li {
+  width: 33%;
+  float: left;
+  padding: 0 15px;
+}
+
 .home-6 {
   background-image: url("/images/beard-book.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.home-6 .text-holder {
+  width: 420px;
+  margin: auto;
+  padding: 4% 0 0 0;
 }
