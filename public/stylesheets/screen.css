@@ -90,6 +90,10 @@ body {
   text-transform: uppercase;
 }
 
+.float-left {
+  float: left;
+}
+
 .clearfix:before,
 .clearfix:after {
   content: "";
@@ -313,6 +317,24 @@ body p {
   padding: 5% 16%;
 }
 
+.home-4 .vert-wrap {
+  height: 90px;
+  top: 40%;
+  position: absolute;
+  right: 100px;
+}
+.home-4 .vert-wrap.pin-left {
+  left: 100px;
+}
+.home-4 .vert-wrap .copy {
+  width: 330px;
+  position: relative;
+}
+.home-4 .vert-wrap .step-header {
+  top: -28px;
+  position: relative;
+  margin-right: 40px;
+}
 .home-4 .a-file .row-1 {
   background-image: url("/images/quick-consult.jpg");
   background-size: cover;

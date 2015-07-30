@@ -64,6 +64,24 @@ body p {
   padding: 5% 16%;
 }
 .home-4 {
+  .vert-wrap {
+    height:90px;
+    top:40%;
+    position:absolute;
+    right: 100px;
+    &.pin-left {
+      left:100px;
+    }
+    .copy {
+      width: 330px;
+      position:relative;
+    }
+    .step-header {
+      top:-28px;
+      position:relative;
+      margin-right: 40px;
+    } 
+  }
   .a-file {
     .row-1 {
       background-image:url('/images/quick-consult.jpg');
